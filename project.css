@@ -1,0 +1,538 @@
+@import url('https://fonts.googleapis.com/css2?family=Battambang:wght@300&family=Hanuman:wght@700&family=Hedvig+Letters+Serif:opsz@12..24&family=Montserrat:ital,wght@0,500;1,600;1,700&family=Poppins:wght@300&family=Roboto:ital,wght@0,100;0,300;0,400;1,300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+.firstPage{
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+}
+.first-img{
+    object-fit: cover;
+    overflow: hidden;
+    position: relative;
+}
+.first-nav{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    border-bottom: .1px solid rgb(130, 132, 134);
+    position: absolute;
+    top: 0;
+}
+.nav-link{
+    font-size: large;
+    font-weight: bolder;
+    text-shadow: 2px 1px blueviolet;
+    transition: 0.5s;
+}
+.nav-link:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+.text{
+    display: flex;
+    gap: 7px;
+    color: rgb(164, 206, 249);
+}
+.left-info{
+    width: 80%;
+    height: 100%;
+    /* margin-left: 10px; */
+}
+
+.right-info{
+    /* width: 100%; */
+    height: 100%;
+}
+.text p{
+    font-size: x-small;
+    margin-top: 10px;
+}
+.fa-location-dot{
+    font-size: small;
+    margin-top: 10px;
+}
+.navbar-hook{
+    color: rgb(187, 255, 0);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 3rem;
+    text-shadow: 4px 4px red;
+}
+#navbar{
+    width: 100%;
+    height: 120px;
+    position: absolute;
+    top: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+.material-symbols-outlined{
+    /* background-color: white; */
+    color: aliceblue;
+    display: none !important;
+}
+.dropdown{
+    margin-top: 12rem;
+    right: 6.5rem;  
+    background-color: grey;
+    border-radius: 2rem;
+    display: none;
+}
+.drop-menu{
+    font-size: 20px;
+    margin-top: 1.5rem;
+    
+}
+.drop-menu a{
+    text-decoration: none;
+    color: white;
+}
+ul{
+    margin: auto;
+    gap: 3rem;
+}
+
+.nav-item a:hover{
+    text-decoration:2.5px underline;
+}
+.btn{
+    width: 170px;
+    height: 50px;
+    /* margin-right: 10rem !important; */
+    border: 2px solid yellow !important;
+    background-color: rgba(0,0,0,.1) !important;
+    transition: 0.5s;
+}
+.btn:hover{
+    background-color: rgb(64, 200, 30) !important;
+    transition: 0.5s;
+}
+/* .slide{
+    margin-top: 10%;
+    text-shadow: 2px 2px rgb(235, 235, 96);
+} */
+.hook-text{
+    width: 58%;
+    height: 45%;
+    padding: 27px;
+    border-radius: 5rem;
+    /* background-color: aqua; */
+    position: absolute;
+    top: 30%;
+    left: 3%;
+    color: aliceblue;
+    backdrop-filter: blur(3px);
+}
+.sub{
+    /* width: 40rem;
+    height: 12rem; */
+    /* background-color: rgb(216, 199, 176); */
+   
+    padding: 10px;
+    border-radius: 15px;
+    text-align: justify;
+    filter: blur();
+}
+.btn-hook{
+    width: 250px;
+    height: 50px;
+    margin-top: 4rem;
+    border-radius: 1rem;
+    font-weight: 400;
+    font-size: large;
+    color: aliceblue;
+    background-color: red;
+    border: 2px solid white;
+    box-shadow: 2px 2px 2px rgb(187, 255, 0);
+}
+#p2{
+    margin-top: 4rem;
+}
+.text-leftrecipe{
+    text-align: center;
+    /* align-items: center; */
+    margin-top: 3rem;
+    font-size: 4rem;
+    font-weight: bold;
+    text-shadow: 5px 5px #558abb;
+}
+.recipe{
+    height: 75%;
+    width: 32%;
+    border-radius: 2rem;
+    background-color: antiquewhite;
+}
+.recipe img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    border-radius: 2rem;
+    box-shadow: 10px 10px 5px black;
+}
+#btn-recipe{
+    margin-top: 2rem;
+    margin-left: 5rem;
+}
+.discount-header{
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-decoration: underline;
+    text-shadow: 2px 2px yellow;
+}
+#dis-menu img{
+    width: 50%;
+    height: 100%;
+    object-fit: fill;
+}
+.chefs{
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-decoration: underline;
+    text-shadow: 2px 2px yellow;
+}
+#masterChefs{
+    display: flex;
+}
+.col-4{
+    margin: 5px 5px;
+    border-radius: 20px;
+    border: 2px solid black;
+    background-color: rgba(0,0,0,.1);
+   
+}
+.col-4 img{
+    width: 100%;
+    height: 50%;
+    border-radius: 20px;
+    object-fit: cover;
+   
+}
+.btn-chef{
+    width: 150px;
+    height: 40px;
+    border-radius: 30px;
+    margin-left: 120px;
+    transition: 0.5s;
+}
+.btn-chef:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+    background-color: greenyellow;
+}
+#footer{
+    height: 160px;
+    margin-top: 10rem;
+    /* background-color: #558abb; */
+    background-image: linear-gradient(#4CB4FE,#8888F8);
+}
+#footer h4{
+    font-weight: bold;
+    color: whitesmoke;
+}
+.footer-text{
+    width: 100%;
+    height: 70%;
+    padding-top: 3rem;
+}
+input{
+    width: 20rem;
+    height: 50px;
+    /* border-radius: 15px; */
+    /* margin: auto; */
+    margin-left: 35rem !important;
+    margin-top: 15px !important;
+}
+.submit{
+    width: 90px;
+    height: 50px;
+    border: 2px solid white;
+}
+.submit:hover{
+    background-color: rgb(179, 209, 134);
+}
+#main-footer{
+    height: 23rem; 
+    /* background-color: blue; */
+    display: flex;
+   
+}
+.box-footer{
+    height: 100%;
+    width: 23%;
+    /* background-color: aqua; */
+    margin: 0 15px;
+}
+/* 
+    iphone=767-320px
+    templet=1023-768px
+    desktop=1024px
+
+*/
+@media (max-width: 767px) { 
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .firstPage{
+        width: 100%;
+        /* height: 60%; */
+    }
+    .first-img{
+        /* width: 100%;
+        height: auto; */
+        max-width: 100%;
+        height: 100vh;
+        /* max-height: 100%; */
+        /* height: 100vh; */
+        /* object-fit: cover; */
+    }
+    .first-nav{
+        display: none;
+    }
+    .material-symbols-outlined{
+        display: flex !important;
+        /* margin-bottom: 115%; */
+        position: absolute;
+        left: 350px; 
+        margin-bottom: 110px;
+        /* left: 480% !important; */
+    }
+    .navbar-hook{
+        font-size: 2rem;
+        position: absolute;
+        margin-bottom: 120px;
+        /* margin-bottom: 120%; */
+    }
+    .hook-text{
+        width: 80%;
+        height: 20%;
+    }
+    .discover{
+        font-size: 30px !important;
+    }
+    .sub{
+        display: none;
+    }
+    .btn-hook{
+        /* font-size:smaller ; */
+        font-size: 14px !important;
+        width: 45%;
+        position: absolute;
+        top: 60%;
+    }
+    #menu-responsiveTable li a{
+        display: none !important;
+    }
+    #p2{
+        width: 100% !important;
+        /* background-color: #558abb !important; */
+        /* display: block !important; */
+        height: 40rem !important;
+        flex-wrap: wrap;
+        /* justify-content: none; */
+
+    }
+    .left-recipe{
+        width: 100% !important;
+        margin-top: 1px !important;
+        height:12rem !important;
+        /* background-color: green; */
+        
+    }
+    .text-leftrecipe p{
+       width: 100% !important;
+       margin-top: 4rem;
+
+    }
+   .right-recipe{
+    /* margin-top: 5rem; */
+    margin-left: none;
+    width: 100% !important;
+    height: 28rem !important;
+    /* background-color: red; */
+   }
+   .recipe{
+        background-color: #E5E5E5;
+        margin-top: 1px;
+        /* width: 10rem; */
+   }
+   .recipe img{
+        /* width: 100% !important; */
+        height: 13rem;
+        margin-top: 2px;
+   }
+   #btn-recipe{
+    margin-left: 15px !important;
+   }
+   #dis-menu{
+    display: block !important;
+   }
+   #dis-menu img{
+    width: 100%;
+    height: 60%;
+   }
+   .chefs{
+    margin-top: 30rem !important;
+   }
+   #masterChefs{
+    width: 100% !important;
+    display: block !important;
+    margin-top: 0px !important;
+   }
+   .col-4{
+    width: 90%;
+    height: 10rem !important;
+   }
+   .col-4 img{
+    width: 90%;
+    height: 75% !important;
+   }
+   .btn-chef{
+    margin-left: 9.5rem !important;
+   }
+   .footer-text h4{
+    font-size: 17px;
+   }
+   #footer{
+    height: 170px !important;
+   }
+   #input-email{
+        margin-left: 1rem !important;
+   }
+   input{
+     width: 13rem;
+     height: 50px;
+   }
+   .btn-chef{
+     height: 50px !important;
+   }
+   #main-footer{
+    /* height: 23rem;  */
+    /* background-color: blue; */
+    margin-left: 0 !important;
+    display: block;
+   
+}
+   .box-footer{
+    height: 30px;
+    width: 250px;
+    /* width: 25% !important; */
+    /* background-color: aqua;  */
+    margin-left: 0 !important;
+    }
+    #second-p{
+        display: none;
+    }
+}
+    /* (max-width: 767px) */
+    @media (max-width: 1023px) {
+        .firstPage {
+          width: 100%;
+        }
+        
+        .first-nav {
+          width: 100%;
+        }
+        
+        .text p {
+          font-size: 8px;
+        }
+        
+        .right-info {
+          width: 40%;
+        }
+        
+        .navbar-hook {
+          font-size: 2rem;
+        }
+        #menu-responsiveTable{
+            display: flex !important;
+            font-size: 15px;
+            margin-left: 7px !important;
+            margin-top: 1rem;
+        }
+        #menu-responsiveTable li a{
+            color: yellow;
+            text-decoration: none ;
+        }
+       
+        .menu {
+          display: none;
+        }
+        
+        .sub {
+          display: none;
+        }
+        .btn-hook{
+            font-size: 20px;
+            background-color: red;
+            color: yellow;
+            font-weight: bold;
+            transition: 0.5s;
+        }
+        .left-recipe{
+            width:20%;
+        }
+        .text-leftrecipe{
+            margin-top: 0.1rem;
+        }
+        .recipe{
+            width: 30%;
+            height: 60%;
+            margin-top:3rem;
+        }
+        #btn-recipe{
+            width: 100px;
+            margin-left:2.5rem ;
+        }
+        #dis-menu{
+            display: block !important;
+        }
+        #dis-menu img{
+            width: 99%;
+            height: 80%;
+        }
+        #masterChefs{
+            width: 100% !important;
+            display: block !important;
+            margin-top: 17rem;
+        }
+        .col-4{
+            width: 100% !important;
+            height: 60rem !important;
+            margin-top: 4rem;
+        }
+        .col-4 img{
+            width: 100%;
+            height: 80%;
+        }
+        .chef-text h3{
+            margin-top: 1rem;
+        }
+        .btn-chef{
+            margin-left: 17rem;
+        }
+        #footer{
+            margin-top: 165rem !important;
+        }
+        input{
+            margin-left: 11rem !important;
+        }
+        #main-p{
+            font-size: 13px !important;
+        }
+        #second-p{
+            font-size: 12px !important;
+        }
+    }
+
+
+
